@@ -1,0 +1,26 @@
+/* pages/Message/Message.wxss */
+page{
+    border-top:1px solid #e0e0e0;
+}
+.m30{
+    padding: 30rpx;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+radio{
+    margin-left: 50rpx;
+}
+input{
+    font-size: 26rpx;
+}
+.submit{
+    width: 100%;
+     background-color: #389fcf;
+     color: #fff;
+}
+.btn-warp{
+    margin-top: 50rpx;
+    margin: 50rpx 30rpx 0rpx 30rpx;
+   
+}

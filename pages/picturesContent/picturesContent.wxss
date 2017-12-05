@@ -1,0 +1,7 @@
+/* pages/picturesContent/picturesContent.wxss */
+@import "../newsContent/newsContent.wxss"
+
+image.pic-cimg{
+    width: 690rpx;
+    height: 350rpx;
+}

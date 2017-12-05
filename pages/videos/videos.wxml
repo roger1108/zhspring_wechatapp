@@ -1,0 +1,30 @@
+<block wx:for="{{videoData}}">
+<navigator url="../videosContent/videosContent?id={{item.id}}">
+<view class="news-view pic">
+   <view class="video-warp">
+   <image src="{{item.typeImg}}"/>
+    <view class="video-icon">
+      <image src="../../icons/player.png"></image>
+    </view>
+   </view>
+    <text class="pic-title">{{item.title}}</text>
+      <view class="pos">
+                <view class="news-time">{{item.releaseDate}}</view>
+                <view class="fr">
+                <view class="video-see">
+                 <image src="../../icons/video-see.png" />
+                {{item.views}}       
+                </view>
+                 <view class="news-ups">
+                 <image src="../../icons/ups.png" />
+                 {{item.ups}}
+                </view>
+                <view class="news-pl">
+                 <image src="../../icons/message.png" />
+                  {{item.commentCount}}
+                </view>
+            </view>
+            </view>
+</view>
+</navigator>
+</block>

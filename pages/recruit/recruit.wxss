@@ -1,0 +1,62 @@
+/* pages/recruit/recruit.wxss */
+page{
+    border-top: 1px solid #e0e0e0;
+    background-color: #f3f3f3;
+}
+.fix-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding:30rpx 0rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.flex-warp{
+   display: flex;
+   flex-direction:column;
+}
+.flex-warp image{
+     width: 60rpx;
+     height: 60rpx;
+}
+.f-blue{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 10rpx;
+    background-color: #389fcf;
+}
+.f-orange{ display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 10rpx;
+    background-color: #ff552e;}
+.f-yellow{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 10rpx;
+    background-color: #ff9f38;
+}
+.f-green{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 10rpx;
+    background-color: #00da9a;
+}
+
+.rec-name{
+    font-size: 26rpx;
+    text-align: center;
+}

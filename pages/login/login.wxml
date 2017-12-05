@@ -1,0 +1,31 @@
+<!--pages/login/login.wxml-->
+<view class="login-warp">
+<form>
+<view class="warp-pos">
+ <input  placeholder="测试账号" type="text" class="userId" bindinput="getUserName" value="{{userName}}"/>
+  <image src="../../icons/shutdown.png" class="img-pos" hidden="{{flag}}" bindtap="clear"></image>
+</view>
+<view class="warp-pos">
+<input placeholder="请输入密码" class="userPwd" password bindinput="getUserPwd" value="{{userPwd}}"/>
+<image src="../../icons/nosee.png" class="img-pos"></image>
+</view>
+<view class="warp-flex">
+ <checkbox bindtap="savePwd">记住密码</checkbox>
+ <navigator url="url">忘记密码？</navigator>
+</view>
+<button class="login-btn" bindtap="login">登录</button>
+<button class="reg-btn" bindtap="reg">注册</button>
+</form>
+<!--快速登录-->
+ <view class="fast-login">
+   <text>快速登录</text>
+ </view>
+ <view class="wx-flex">
+     <view class="wx-border" bindtap="weixinLogin"
+>
+      <image src="../../icons/wx-logo.png"></image>
+     </view>
+ </view>
+</view>
+
+

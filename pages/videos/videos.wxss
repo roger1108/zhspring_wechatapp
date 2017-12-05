@@ -1,0 +1,21 @@
+/* pages/videos/videos.wxss */
+@import "../pictures/pictures.wxss";
+.pic .video-warp image{
+    width: 690rpx;
+    height: 430rpx;
+}
+
+.video-warp{
+    position: relative;
+}
+.video-icon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -35rpx;
+    margin-top: -35rpx;
+}
+.video-warp view.video-icon image {
+    width: 70rpx;
+    height:70rpx;
+}

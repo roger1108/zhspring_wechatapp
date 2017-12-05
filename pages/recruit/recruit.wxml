@@ -1,0 +1,30 @@
+
+<view class="fix-header">
+
+ <view class="flex-warp">
+   <view class="f-blue">
+          <image src="../../icons/rec1.png"></image>
+   </view>
+   <text class="rec-name">职位搜索</text>
+   </view>
+  <view class="flex-warp">
+    <view class="f-orange">
+     <image src="../../icons/rec2.png"></image>
+    </view>
+   <text class="rec-name">名企招聘</text>
+   </view>
+
+   <view class="flex-warp">
+      <view class="f-yellow">
+         <image src="../../icons/rec3.png"></image>
+      </view>
+       <text class="rec-name">我的申请</text>
+   </view>
+   <view class="flex-warp">
+       <view class="f-green">
+             <image src="../../icons/rec4.png"></image>
+       </view>
+       <text class="rec-name">简历管理</text>
+   </view>
+</view>
+

@@ -1,0 +1,6 @@
+/* pages/videosContent/videosContent.wxss */
+@import "../newsContent/newsContent.wxss";
+.videos-play video{
+   width: 690rpx;
+   height: 400rpx;
+}

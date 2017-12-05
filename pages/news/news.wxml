@@ -1,0 +1,46 @@
+<swiper class="index-banner" indicator-dots="true" autoplay="true" >
+  <swiper-item wx:for="{{imgPath}}" wx:if="{{item.typeImg!=''}}">
+   <navigator url="../picturesContent/picturesContent?id={{item.id}}" style="height:285rpx;">
+    <image src="{{item.typeImg}}"/>
+      </navigator>
+  </swiper-item>  
+</swiper>
+  <navigator url="../newsContent/newsContent?id={{fastData.id}}">
+<view class="fast-news">
+ <view class="red-sub">头条</view>
+  <text class="kx-title">{{fastData.title}}</text>
+</view>
+</navigator>
+<scroll-view class="news-item" scroll-y="true">
+<block wx:for="{{newsDataArr}}" wx:for-item="news">
+   <navigator url="../newsContent/newsContent?id={{news.id}}">
+   <view class="news-view">
+     <image src="{{news.titleImg}}" wx:if="{{news.titleImg!=''}}"/>
+     <view class="news-content">
+             <view class="news-title">
+                        {{news.title}}              
+                <text class="news-hot" wx:if="{{news.recommend==true}}">热点                         </text> 
+             </view>           
+           <view class="pos">
+                <view class="news-time">{{news.releaseDate}}</view>
+                <view class="fr">
+                <view class="news-see">
+                 <image src="../../icons/see.png" />
+                 {{news.views}}
+                 </view>
+                <view class="news-ups">
+                 <image src="../../icons/ups.png" />
+                 {{news.ups}}
+                </view>
+                <view class="news-pl">
+                 <image src="../../icons/message.png" />
+                 {{news.comments}}
+                </view>
+                </view>
+            </view>
+     </view>
+   </view>
+   </navigator>
+   </block>
+</scroll-view>
+<view hidden="{{hidden}}" class="hidden"><image src="../../icons/waiting.gif" /> 正在加载....</view>

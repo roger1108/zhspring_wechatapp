@@ -1,0 +1,17 @@
+/* pages/pictures/pictures.wxss */
+.pic{
+    padding: 30rpx 0 30rpx 0;
+       display: flex;
+        border-bottom: 1px solid #eeeeee;
+        margin: 0 30rpx 0 30rpx;
+       flex-direction: column;
+}
+.pic image.pic-img{
+    width: 690rpx;
+    height: 325rpx;
+}
+.pic-title{
+    font-size: 34rpx;
+    padding-top: 20rpx;
+    padding-bottom: 30rpx;
+}

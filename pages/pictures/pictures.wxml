@@ -1,0 +1,28 @@
+<block wx:for="{{imgData}}" wx:for-item="imgs">
+<navigator url="../picturesContent/picturesContent?id={{imgs.id}}"
+wx:if="{{imgs.typeImg!=''}}">
+<view class="news-view pic">
+   <image src="{{imgs.typeImg}}"  class="pic-img"/>
+    <text class="pic-title">{{imgs.title}}</text>
+      <view class="pos">
+                <view class="news-time">{{imgs.releaseDate}}</view>
+                <view class="fr">
+                <view class="news-see">
+                 <image src="../../icons/see.png" />
+                 {{imgs.views}}          
+                </view>
+                 <view class="news-ups">
+                 <image src="../../icons/ups.png" />
+                 {{imgs.ups}}
+                </view>
+                <view class="news-pl">
+                 <image src="../../icons/message.png" />
+                   {{imgs.comments}}
+                </view>
+            </view>
+            </view>
+</view>
+</navigator>
+</block>
+<view hidden="{{hidden}}" class="hidden" wx:if="{{hasMore!='true'}}"><image src="../../icons/waiting.gif" /> 正在加载....</view>
+<view hidden="{{hidden}}" class="hidden" wx:else>没有更多数据了....</view>

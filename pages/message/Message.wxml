@@ -1,0 +1,19 @@
+<!--pages/Message/Message.wxml-->
+<form bindsubmit="formSubmit">
+<view class="m30">
+  <label>选择留言类型</label>
+  <radio-group name="ctgId">
+   <radio value="1" color="#389fcf" checked>普通</radio>
+   <radio value="2" color="#389fcf">投诉</radio>
+  </radio-group>
+</view>
+<view class="m30">
+   <input placeholder="请输入标题" name="title" value="{{title}}"/>
+</view>
+<view class="m30">
+<textarea placeholder="请输入留言内容" name="content" value="{{content}}"/>
+</view>
+<view class="btn-warp">
+<button formType="submit" class="submit" bindtap="save">提交</button>
+</view>
+</form>
