@@ -40,9 +40,8 @@ Page({
        wx.request({
          url: news_url,
          data: {},
-         method: 'POST',
+         method: 'GET',
          success: function(res){
-          
          self.setData({
              newsDataArr:res.data,
              fastData:res.data[0],
@@ -51,7 +50,7 @@ Page({
              );
              wx.hideToast();
          },
-        fail:function(){
+        fail:function(res){
           console.log("error");
         }
        }); 
