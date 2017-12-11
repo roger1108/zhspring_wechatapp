@@ -1,6 +1,6 @@
 
 var app=getApp();
-var news_url=app.globalData.url+"/content/list.jspx?siteIds=1&count=15&channelIds=75&https=0";
+var news_url=app.globalData.url+"/content/list.jspx?siteIds=1&count=10&channelIds=75&https=0";
 
 var img_url=app.globalData.url+"/content/list.jspx?siteIds=1&count=3&channelIds=76&https=0";
 Page({
